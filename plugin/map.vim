@@ -11,8 +11,8 @@ map k gk
 " 全选
 nnoremap ,, ggVG
 
-nnoremap H 0
-nnoremap L $
+" nnoremap H 0
+" nnoremap L $
 
 " 分屏设置
 nnoremap ,v :vs %<CR>
