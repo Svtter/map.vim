@@ -1,15 +1,28 @@
+" Vim global plugin for mappings
+" Last Change: 
+" Maintainer: svtter <svtter@qq.com>
+" License: 
+
+
+
 " ----------------------------------------------------------------------------
 "  map设置
 " ----------------------------------------------------------------------------
 " 任何时候都是使用*noremap的形式，以非递归形式
 
+" NERDtree 目录
+nnoremap ,d :NERDTreeToggle<CR>
+
 " map
 map j gj
 map k gk
 
+" Ctrl map
+inoremap <C-z> <Esc>uA
+
 " normal, 多用,作为开始
 " 全选
-nnoremap ,, ggVG
+nnoremap ,a ggVG
 
 " nnoremap H 0
 " nnoremap L $
@@ -17,6 +30,8 @@ nnoremap ,, ggVG
 " 分屏设置
 nnoremap ,v :vs %<CR>
 nnoremap ,s :sp %<CR>
+
+" 存储设置
 nnoremap ,w :w<CR>
 nnoremap ,q :q<CR>
 
@@ -33,11 +48,14 @@ nnoremap ,cr d%
 nnoremap ,rl :so %<CR>
 
 " 快速编辑vimrc
-nnoremap ,e :e $MYVIMRC<CR>
+nnoremap ,ee :e $MYVIMRC<CR>
+nnoremap ,ev :e ~/.vim/bundle<CR>
+
+" 因为对ls -color=auto 支持不佳，所以采用bash（我这里bash默认是不带-color的)
+nnoremap ,ba :ConqueTerm bash<CR>
 
 " 快速编辑blog
-nnoremap ,b :e /home/svitter/svtter.github.io/source/_posts/<CR>
-nnoremap ,d :NERDTreeToggle<CR>
+nnoremap ,bl :e /home/svitter/svtter.github.io/source/_posts/<CR>
 
 " 用于缓存区的快速切换, t键
 nnoremap tj :bn<CR>
