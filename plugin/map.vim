@@ -14,21 +14,25 @@ let mapleader = ","
 
 " NERDtree 目录<Leader> mru.vim
 nnoremap <Leader>d :NERDTreeToggle<CR>
-nnoremap <Leader>m :MRU<CR>
+nnoremap <Leader>mm :MRU<CR>
 
 " Tab
-nnoremap <Tab> gt
+nnoremap <Tab> a<Tab>
 
 " map
 map j gj
 map k gk
+
+" For ACM
+nnoremap <Leader>ii :vs input<CR>
+nnoremap <Leader>io :vs ouput<CR>
 
 " Ctrl map
 inoremap <C-z> <Esc>uA
 
 " normal<Leader> 多用,作为开始
 " 全选
-nnoremap <Leader>a ggVG
+nnoremap <Leader>aa ggVG
 
 " 复制到系统粘贴
 vnoremap <Leader>y "+y
@@ -45,6 +49,7 @@ nnoremap <Leader>s :sp %<CR>
 nnoremap <Leader>we :w<CR>
 nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>Q :q!<CR>
 
 " 快速添加成对
 nnoremap <Leader>" viw<esc>a"<esc>hbi"<esc>lel
@@ -87,17 +92,13 @@ nnoremap cM :%s/\r$//g<CR>:noh<CR>
 " space to :
 " nnoremap <space> :
 
-" ; to :
-nnoremap ; :
-
-
 " 用空格键来开关折叠
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
 
 " 强迫不可用模式
 inoremap <Esc> <nop>
-inoremap ii <ESC>
+inoremap df <ESC>
 
 " Movement:
 " 编辑函数参数
