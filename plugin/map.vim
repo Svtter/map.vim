@@ -17,7 +17,7 @@ nnoremap <Leader>d :NERDTreeToggle<CR>
 nnoremap <Leader>mm :MRU<CR>
 
 " Tab
-nnoremap <Tab> a<Tab>
+nnoremap <Tab> ddO
 
 " map
 map j gj
@@ -29,6 +29,7 @@ nnoremap <Leader>io :vs ouput<CR>
 
 " Ctrl map
 inoremap <C-z> <Esc>uA
+inoremap <C-l> <Right>
 
 " normal<Leader> 多用,作为开始
 " 全选
@@ -107,6 +108,12 @@ onoremap in( :<c-u>normal! f(vi(<cr>
 " 插入模式下光标上下左右
 inoremap <c-k> <Up>
 inoremap <c-j> <Down>
+
+" 在不使用 MiniBufExplorer 插件时也可用<C-k,j,h,l>切换到上下左右的窗口中去
+noremap <c-k> <c-w>k
+noremap <c-j> <c-w>j
+noremap <c-h> <c-w>h
+noremap <c-l> <c-w>l
 
 
 " Ctrl + B 插入模式下使用Home
