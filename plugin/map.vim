@@ -16,7 +16,7 @@ let mapleader = ","
 nnoremap <Leader>d :NERDTreeToggle<CR>
 nnoremap <Leader>mm :MRU<CR>
 
-" Tab
+" Tab 快速删除本行
 nnoremap <Tab> ddO
 
 " map
