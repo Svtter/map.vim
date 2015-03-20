@@ -19,6 +19,9 @@ nnoremap <Leader>mm :MRU<CR>
 " Tab 快速删除本行
 nnoremap <Tab> ddO
 
+" 与J相反
+nnoremap to i<CR><Esc>
+
 " map
 map j gj
 map k gk
@@ -57,7 +60,6 @@ nnoremap <Leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <Leader>' viw<esc>a'<esc>hbi'<esc>lel
 nnoremap <Leader>( viw<esc>a)<esc>hbi(<esc>lel
 nnoremap <Leader>[ viw<esc>a]<esc>hbi[<esc>lel
-nnoremap <Leader>o i<CR><Esc>
 
 " 括号
 nnoremap <Leader>cc %
