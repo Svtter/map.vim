@@ -5,8 +5,9 @@
 
 
 
+
 " ----------------------------------------------------------------------------
-"  map设置
+"  Map: map设置
 " ----------------------------------------------------------------------------
 " 任何时候都是使用*noremap的形式，以非递归形式
 
@@ -20,7 +21,7 @@ nnoremap <Leader>mm :MRU<CR>
 nnoremap <Tab> ddO
 
 " 与J相反
-nnoremap to i<CR><Esc>
+nnoremap <Leader>to i<CR><Esc>
 
 " map
 map j gj
@@ -78,10 +79,10 @@ nnoremap <Leader>ba :ConqueTerm bash<CR>
 nnoremap <Leader>bl :e /home/svitter/svtter.github.io/source/_posts/<CR>
 
 " 用于缓存区的快速切换<Leader> t键
-nnoremap tj :bn<CR>
-nnoremap tk :bp<CR>
-nnoremap tn :tabnew<CR>
-nnoremap tc :Toc<CR>
+nnoremap <Leader>tj :bn<CR>
+nnoremap <Leader>tk :bp<CR>
+nnoremap <Leader>tn :tabnew<CR>
+nnoremap <Leader>tc :Toc<CR>
 
 " 生成tags
 noremap <F3> :execute '!ctags -R *'<CR>
@@ -104,6 +105,7 @@ inoremap <Esc> <nop>
 inoremap df <ESC>
 
 " Movement:
+"
 " 编辑函数参数
 onoremap in( :<c-u>normal! f(vi(<cr>
 
@@ -125,4 +127,3 @@ inoremap <c-b> <Home>
 inoremap <c-e> <End>
 
 "  end
-
