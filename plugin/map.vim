@@ -17,6 +17,9 @@ let mapleader = ","
 nnoremap <Leader>d :NERDTreeToggle<CR>
 nnoremap <Leader>mm :MRU<CR>
 
+" 新的cpp文件
+nnoremap <Leader>nf :n $HOME/code/uva/
+
 " Tab 快速删除本行
 nnoremap <Tab> ddO
 
@@ -47,8 +50,8 @@ nnoremap <Leader>p "+p
 " nnoremap L $
 
 " 分屏设置
-nnoremap <Leader>v :vs %<CR>
-nnoremap <Leader>s :sp %<CR>
+nnoremap <Leader>vs :vs %<CR>
+nnoremap <Leader>sp :sp %<CR>
 
 " 存储设置
 nnoremap <Leader>we :w<CR>
