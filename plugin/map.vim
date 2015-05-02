@@ -73,6 +73,7 @@ nnoremap <Leader>rl :so %<CR>
 " 快速编辑vimrc
 nnoremap <Leader>ee :e $MYVIMRC<CR>
 nnoremap <Leader>ev :e ~/.vim/bundle<CR>
+nnoremap <Leader>el :e ~/.vim/Plugin.vim<CR>
 nnoremap <Leader>em :e ~/.vim/bundle/map.vim/plugin/map.vim<CR>
 
 " 因为对ls -color=auto 支持不佳，所以采用bash（我这里bash默认是不带-color的)
