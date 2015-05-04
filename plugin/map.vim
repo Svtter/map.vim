@@ -23,8 +23,7 @@ nnoremap <Leader>nt :call TempCpp()<CR>
 
 
 func! TempCpp()
-    execute '!rm /tmp/tmp.cpp'
-    execute 'e /tmp/tmp.cpp'
+    execute 'n /tmp/tmp.cpp'
 endfunction
 
 
