@@ -1,7 +1,7 @@
 " Vim global plugin for mappings
-" Last Change: 
+" Last Change:
 " Maintainer: svtter <svtter@qq.com>
-" License: 
+" License:
 
 
 
@@ -19,6 +19,14 @@ nnoremap <Leader>mm :MRU<CR>
 
 " 新的cpp文件
 nnoremap <Leader>nf :n $HOME/code/uva/
+nnoremap <Leader>nt :call TempCpp()<CR>
+
+
+func! TempCpp()
+    execute '!rm /tmp/tmp.cpp'
+    execute 'e /tmp/tmp.cpp'
+endfunction
+
 
 " Tab 快速删除本行
 nnoremap <Tab> ddO
@@ -104,7 +112,7 @@ nnoremap cM :%s/\r$//g<CR>:noh<CR>
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
 
-" 强迫不可用模式
+" 强迫ESC不可用模式
 inoremap <Esc> <nop>
 inoremap df <ESC>
 
