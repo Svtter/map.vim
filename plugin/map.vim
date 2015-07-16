@@ -26,10 +26,6 @@ func! TempCpp()
     execute 'n /tmp/tmp.cpp'
 endfunction
 
-
-" Tab 快速删除本行
-nnoremap <Tab> ddO
-
 " 与J相反
 nnoremap <Leader>to i<CR><Esc>
 
@@ -119,10 +115,6 @@ inoremap df <ESC>
 "
 " 编辑函数参数
 onoremap in( :<c-u>normal! f(vi(<cr>
-
-" 插入模式下光标上下左右
-inoremap <c-k> <Up>
-inoremap <c-j> <Down>
 
 " 在不使用 MiniBufExplorer 插件时也可用<C-k,j,h,l>切换到上下左右的窗口中去
 noremap <c-k> <c-w>k
