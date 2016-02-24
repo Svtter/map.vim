@@ -88,7 +88,11 @@ nnoremap <Leader>bl :e /home/svitter/svtter.github.io/source/_posts/<CR>
 " 用于缓存区的快速切换<Leader> t键
 nnoremap <Leader>tj :bn<CR>
 nnoremap <Leader>tk :bp<CR>
+
+" Tab的相关操作
 nnoremap <Leader>tn :tabnew<CR>
+nnoremap <Leader>th :tabp<CR>
+nnoremap <Leader>tl :tabn<CR>
 nnoremap <Leader>tc :Toc<CR>
 
 " 生成tags
