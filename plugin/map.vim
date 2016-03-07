@@ -13,9 +13,11 @@
 
 let mapleader = ","
 
-" NERDtree 目录<Leader> mru.vim
+" NERDtree 目录
 nnoremap <Leader>d :NERDTreeToggle<CR>
-nnoremap <Leader>mm :MRU<CR>
+
+" Need Ctrlp
+nnoremap <Leader>mm :CtrlPMRU<CR>
 
 " 新的cpp文件
 nnoremap <Leader>nf :n $HOME/code/uva/
@@ -71,11 +73,12 @@ nnoremap <Leader>[ viw<esc>a]<esc>hbi[<esc>lel
 " 括号
 nnoremap <Leader>cc %
 nnoremap <Leader>cr d%
-nnoremap <Leader>rl :so %<CR>
+"nnoremap <Leader>rl :so %<CR>
 
 " 快速编辑vimrc
 nnoremap <Leader>ee :e $MYVIMRC<CR>
-nnoremap <Leader>ev :e ~/.vim/bundle<CR>
+" 与spf13-vim冲突
+"nnoremap <Leader>ev :e ~/.vim/bundle<CR>
 nnoremap <Leader>el :e ~/.vim/Plugin.vim<CR>
 nnoremap <Leader>em :e ~/.vim/bundle/map.vim/plugin/map.vim<CR>
 
