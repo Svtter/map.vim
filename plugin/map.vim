@@ -77,10 +77,12 @@ nnoremap <Leader>cr d%
 
 " 快速编辑vimrc
 nnoremap <Leader>ee :e $MYVIMRC<CR>
+
 " 与spf13-vim冲突
 "nnoremap <Leader>ev :e ~/.vim/bundle<CR>
 nnoremap <Leader>el :e ~/.vim/Plugin.vim<CR>
 nnoremap <Leader>em :e ~/.vim/bundle/map.vim/plugin/map.vim<CR>
+nnoremap <Leader>ea :e ~/.vim/bundle/vim-abbreviations/plugin/vim-abbreviations.vim<CR>
 
 " 因为对ls -color=auto 支持不佳，所以采用bash（我这里bash默认是不带-color的)
 nnoremap <Leader>ba :ConqueTerm bash<CR>
@@ -107,6 +109,10 @@ nnoremap cS :%s/\s\+$//g<CR>:noh<CR>
 " 常规模式下输入 cM 清除行尾 ^M 符号
 nnoremap cM :%s/\r$//g<CR>:noh<CR>
 
+" 将当前行移动到下一行
+nnoremap - ddo<Esc>p
+nnoremap \ dd
+
 " space to :
 " nnoremap <space> :
 
@@ -130,10 +136,17 @@ noremap <c-h> <c-w>h
 noremap <c-l> <c-w>l
 
 
+" Emacs Work:
 " Ctrl + B 插入模式下使用Home
 " Ctrl + E 插入模式下使用End
 " 暂时使用本义
 inoremap <c-b> <Home>
 inoremap <c-e> <End>
+inoremap <c-k> <Esc>ld$i
+inoremap <c-y> <Esc>"+p
+inoremap <c-f> <Esc>la
+inoremap <c-b> <Esc>i
+inoremap <c-n> <Esc>ja
+
 
 "  end
