@@ -142,7 +142,8 @@ noremap <c-l> <c-w>l
 " 暂时使用本义
 inoremap <c-b> <Home>
 inoremap <c-e> <End>
-inoremap <c-k> <Esc>ld$i
+
+"inoremap <c-k> <Esc>ld$i "conflict with snip
 inoremap <c-y> <Esc>"+p
 inoremap <c-f> <Esc>la
 inoremap <c-b> <Esc>i
