@@ -14,7 +14,8 @@
 let mapleader = ","
 
 " NERDtree 目录
-nnoremap <Leader>d :NERDTreeToggle<CR>
+nnoremap <Leader>dd :NERDTreeToggle<CR>
+nnoremap <Leader>de :NERDTreeFind<CR>
 
 " Need Ctrlp
 nnoremap <Leader>mm :CtrlPMRU<CR>
