@@ -78,14 +78,13 @@ nnoremap <Leader>cr d%
 " 快速编辑vimrc
 nnoremap <Leader>ee :e $MYVIMRC<CR>
 
-" 与spf13-vim冲突
-"nnoremap <Leader>ev :e ~/.vim/bundle<CR>
+nnoremap <Leader>ev :e ~/.vim/plugged/<CR>
 nnoremap <Leader>el :e ~/.vim/Plugin.vim<CR>
-nnoremap <Leader>em :e ~/.vim/bundle/map.vim/plugin/map.vim<CR>
-nnoremap <Leader>ea :e ~/.vim/bundle/vim-abbreviations/plugin/vim-abbreviations.vim<CR>
+nnoremap <Leader>em :e ~/.vim/plugged/map.vim/plugin/map.vim<CR>
+nnoremap <Leader>ea :e ~/.vim/plugged/vim-abbreviations/plugin/vim-abbreviations.vim<CR>
 
-" 因为对ls -color=auto 支持不佳，所以采用bash（我这里bash默认是不带-color的)
-nnoremap <Leader>ba :ConqueTerm bash<CR>
+" 使用Neovim自带的terminal
+nnoremap <Leader>ba :vsp term://zsh<CR>
 
 " 快速编辑blog
 nnoremap <Leader>bl :e /home/svitter/svtter.github.io/source/_posts/<CR>
@@ -95,6 +94,8 @@ nnoremap <Leader>tj :bn<CR>
 nnoremap <Leader>tk :bp<CR>
 
 " Tab的相关操作
+nnoremap <S-H> gT
+nnoremap <S-L> gt
 nnoremap <Leader>tn :tabnew<CR>
 nnoremap <Leader>th :tabp<CR>
 nnoremap <Leader>tl :tabn<CR>
