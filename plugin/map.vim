@@ -83,6 +83,7 @@ nnoremap <Leader>ev :e ~/.vim/plugged/<CR>
 nnoremap <Leader>el :e ~/.vim/Plugin.vim<CR>
 nnoremap <Leader>em :e ~/.vim/plugged/map.vim/plugin/map.vim<CR>
 nnoremap <Leader>ea :e ~/.vim/plugged/vim-abbreviations/plugin/vim-abbreviations.vim<CR>
+nnoremap <Leader>en :e ~/.vim/config/
 
 " 使用Neovim自带的terminal
 nnoremap <Leader>ba :vsp term://zsh<CR>
