@@ -19,6 +19,7 @@ nnoremap <Leader>ss :NERDTreeFind<CR>
 
 " Need Ctrlp
 nnoremap <Leader>mm :CtrlPMRU<CR>
+nnoremap <Leader>tt :TagbarToggle<CR>
 
 " 新的cpp文件
 nnoremap <Leader>nf :n $HOME/code/uva/

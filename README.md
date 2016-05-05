@@ -6,4 +6,5 @@
 ---
 
 - Nerdtree
-- ConqueTerm
+- Tagbar
+- Ctrlp
