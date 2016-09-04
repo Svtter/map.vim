@@ -50,6 +50,9 @@ inoremap <C-l> <Right>
 " 全选
 nnoremap <Leader>aa ggVG
 
+" jet-pack buffer
+nnoremap <leader>l :ls<CR>:b<space>
+
 " 复制到系统粘贴
 vnoremap <Leader>y "+y
 nnoremap <Leader>p "+p
@@ -147,12 +150,5 @@ noremap <c-l> <c-w>l
 " 暂时使用本义
 inoremap <c-b> <Home>
 inoremap <c-e> <End>
-
-"inoremap <c-k> <Esc>ld$i "conflict with snip
-inoremap <c-y> <Esc>"+p
-inoremap <c-f> <Esc>la
-inoremap <c-b> <Esc>i
-inoremap <c-n> <Esc>ja
-
 
 "  end
