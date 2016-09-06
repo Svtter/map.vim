@@ -12,19 +12,24 @@
 " 任何时候都是使用*noremap的形式，以非递归形式
 
 let mapleader = ","
+" map t to command
+nnoremap t :
 
 " NERDtree 目录
 nnoremap <Leader>d :NERDTreeToggle<CR>
 nnoremap <Leader>ss :NERDTreeFind<CR>
 
 " Need Ctrlp
-nnoremap <Leader>mm :CtrlPMRU<CR>
-nnoremap <Leader>fu :CtrlPFunky<CR>
+nnoremap <Leader>f :CtrlPFunky<CR>
+" jet-pack buffer without-Ctrl-P: "nnoremap <leader>l :ls<CR>:b<space>
+nnoremap <Leader>l :CtrlPBuffer<CR>
+nnoremap <Leader>tp :CtrlPBufTagAll<CR>
 nnoremap <Leader>tt :TagbarToggle<CR>
 
+
 " 新的cpp文件
-nnoremap <Leader>nf :n $HOME/code/uva/
-nnoremap <Leader>nt :call TempCpp()<CR>
+" nnoremap <Leader>nf :n $HOME/code/uva/
+" nnoremap <Leader>nt :call TempCpp()<CR>
 
 
 func! TempCpp()
@@ -50,8 +55,6 @@ inoremap <C-l> <Right>
 " 全选
 nnoremap <Leader>aa ggVG
 
-" jet-pack buffer
-nnoremap <leader>l :ls<CR>:b<space>
 
 " 复制到系统粘贴
 vnoremap <Leader>y "+y
