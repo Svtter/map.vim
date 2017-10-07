@@ -5,26 +5,23 @@
 
 
 
-
 " ----------------------------------------------------------------------------
 "  Map: map设置
 " ----------------------------------------------------------------------------
 " 任何时候都是使用*noremap的形式，以非递归形式
 
 let mapleader = ","
-" map t to command
-nnoremap t :
 
 " NERDtree 目录
 nnoremap <Leader>d :NERDTreeToggle<CR>
 nnoremap <Leader>ss :NERDTreeFind<CR>
 
 " Need Ctrlp
-nnoremap <Leader>f :CtrlPFunky<CR>
 " jet-pack buffer without-Ctrl-P: "nnoremap <leader>l :ls<CR>:b<space>
-nnoremap <Leader>l :CtrlPBuffer<CR>
-nnoremap <Leader>tp :CtrlPBufTagAll<CR>
-nnoremap <Leader>tt :TagbarToggle<CR>
+nnoremap tf :CtrlPFunky<CR>
+nnoremap tb :CtrlPBuffer<CR>
+nnoremap tp :CtrlPBufTagAll<CR>
+nnoremap tt :TagbarToggle<CR>
 
 
 " 新的cpp文件
@@ -64,14 +61,16 @@ nnoremap <Leader>p "+p
 " nnoremap L $
 
 " 分屏设置
-nnoremap <Leader>vs :vs %<CR>
-nnoremap <Leader>sp :sp %<CR>
+nnoremap ss :vs %<CR>
+nnoremap sp :sp %<CR>
 
 " 存储设置
 nnoremap <Leader>we :w<CR>
 nnoremap <Leader>wq :wq<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>x :x<CR>
+nnoremap <Leader>X :x!<CR>
 
 " 快速添加成对
 nnoremap <Leader>" viw<esc>a"<esc>hbi"<esc>lel
@@ -115,10 +114,10 @@ nnoremap <Leader>tc :Toc<CR>
 noremap <F3> :execute '!ctags -R *'<CR>
 
 " 常规模式下输入 cS 清除行尾空格
-nnoremap cS :%s/\s\+$//g<CR>:noh<CR>
+nnoremap tS :%s/\s\+$//g<CR>:noh<CR>
 
 " 常规模式下输入 cM 清除行尾 ^M 符号
-nnoremap cM :%s/\r$//g<CR>:noh<CR>
+nnoremap tM :%s/\r$//g<CR>:noh<CR>
 
 " 将当前行移动到下一行
 nnoremap - ddo<Esc>p
@@ -154,4 +153,14 @@ noremap <c-l> <c-w>l
 inoremap <c-b> <Home>
 inoremap <c-e> <End>
 
+" HTML Emmet:
+
+
+nnoremap <Leader>m :browse oldfiles<CR>
+nnoremap <Leader>u :UndotreeToggle<cr>
+
+
+au FileType go nmap <leader>r <Plug>(go-run)
+
 "  end
+
