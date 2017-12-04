@@ -132,7 +132,7 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
 " 强迫ESC不可用模式
 inoremap <Esc> <nop>
-inoremap df <ESC>
+inoremap dj <ESC>
 
 " Movement:
 "
