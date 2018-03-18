@@ -1,3 +1,13 @@
+" File              : /Users/xiuhao/.vim/plugged/map.vim/plugin/map.vim
+" Author            : Svtter <svtter@qq.com>
+" Date              : 03.02.2018
+" Last Modified Date: 03.02.2018
+" Last Modified By  : Svtter <svtter@qq.com>
+" File              : /Users/xiuhao/.vim/plugged/map.vim/plugin/map.vim
+" Author            : Svtter <svtter@qq.com>
+" Date              : 27.01.2018
+" Last Modified Date: 27.01.2018
+" Last Modified By  : Svtter <svtter@qq.com>
 " Vim global plugin for mappings
 " Last Change:
 " Maintainer: svtter <svtter@qq.com>
@@ -10,7 +20,7 @@
 " ----------------------------------------------------------------------------
 " 任何时候都是使用*noremap的形式，以非递归形式
 
-let mapleader = ","
+let mapleader = " "
 
 " NERDtree 目录
 nnoremap <Leader>d :NERDTreeToggle<CR>
@@ -22,6 +32,40 @@ nnoremap tf :CtrlPFunky<CR>
 nnoremap tb :CtrlPBuffer<CR>
 nnoremap tp :CtrlPBufTagAll<CR>
 nnoremap tt :TagbarToggle<CR>
+
+
+" use hotkey to change buffer
+noremap <silent>\bn :bn<cr>
+noremap <silent>\bp :bp<cr>
+noremap <silent>\bm :bm<cr>
+noremap <silent>\bv :vs<cr>
+noremap <silent>\bd :bdelete<cr>
+noremap <silent>\bl :ls<cr>
+noremap <silent>\bb :ls<cr>:b
+noremap <silent>\nh :nohl<cr>
+
+" use hotkey to operate tab
+noremap <silent><tab> <nop>
+noremap <silent><tab>m :tabnew<cr>
+noremap <silent><tab>e :tabclose<cr>
+noremap <silent><tab>n :tabn<cr>
+noremap <silent><tab>p :tabp<cr>
+noremap <silent><tab>f <c-i>
+noremap <silent><tab>b <c-o>
+noremap <silent>\t :tabnew<cr>
+noremap <silent>\g :tabclose<cr>
+noremap <silent>\1 :tabn 1<cr>
+noremap <silent>\2 :tabn 2<cr>
+noremap <silent>\3 :tabn 3<cr>
+noremap <silent>\4 :tabn 4<cr>
+noremap <silent>\5 :tabn 5<cr>
+noremap <silent>\6 :tabn 6<cr>
+noremap <silent>\7 :tabn 7<cr>
+noremap <silent>\8 :tabn 8<cr>
+noremap <silent>\9 :tabn 9<cr>
+noremap <silent>\0 :tabn 10<cr>
+noremap <silent><s-tab> :tabnext<CR>
+inoremap <silent><s-tab> <ESC>:tabnext<CR>
 
 
 " 新的cpp文件
@@ -132,7 +176,7 @@ nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' : 'zo')<CR>
 
 " 强迫ESC不可用模式
 inoremap <Esc> <nop>
-inoremap dj <ESC>
+inoremap fd <ESC>
 
 " Movement:
 "
@@ -161,6 +205,9 @@ nnoremap <Leader>u :UndotreeToggle<cr>
 
 
 au FileType go nmap <leader>r <Plug>(go-run)
+
+let g:header_field_author = 'Svtter'
+let g:header_field_author_email = 'svtter@qq.com'
 
 "  end
 
